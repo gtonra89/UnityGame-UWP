@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6f2d0d2f2b063f04a8041725df5efca4
+timeCreated: 1507718456
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Rosewood Std
+  fontNames:
+  - Rosewood Std
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
