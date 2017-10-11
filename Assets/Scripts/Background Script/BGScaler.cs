@@ -10,7 +10,7 @@ public class BGScaler : MonoBehaviour {
 		if (gameObject.name == "Background"){ 
 			transform.localScale = new Vector3 (widht, height, 0);
 		} else {
-			transform.localScale = new Vector3 (widht + 3f, 6, 0);
+			transform.localScale = new Vector3 (widht + 3f, 5, 0);
 		}
 
 	}
