@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BGLooper : MonoBehaviour {
 
-	public float speed = 0.1f;
+	public float speed = 0.5f;
 
 	private Vector2 offset = Vector2.zero;
 	private Material mat;

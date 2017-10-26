@@ -6,13 +6,9 @@ public class PlayerJump : MonoBehaviour {
 
 	[SerializeField]
 	private AudioClip jumpClip; //declare variables
-
-	private float jumpForce = 9f, forwardForce = 0f; //assign jump variables 
-
+	private float jumpForce = 20f, forwardForce = 1.5f; //assign jump variables 
 	private Rigidbody2D myBody;
-
 	private bool canJump;  // jump boolean
-
 	private Button jumpBtn; //button variable
 	
 	void Awake () {
@@ -26,6 +22,7 @@ public class PlayerJump : MonoBehaviour {
 	void Update () {
 		if(Mathf.Abs(myBody.velocity.y) == 0) {
 			canJump = true;
+			
 		}
 	}
 
@@ -37,9 +34,13 @@ public class PlayerJump : MonoBehaviour {
 			//AudioSource.PlayClipAtPoint(jumpClip, transform.position);
 
 			if(transform.position.x < 0) {
-				forwardForce = 4f;
+				forwardForce = 1.5f;
+				jumpForce = 20f;
+				
 			} else {
-				forwardForce = 0f;
+				forwardForce = 1.5f;
+				jumpForce = 20f;
+				
 			}
 
 			myBody.velocity = new Vector2(forwardForce, jumpForce);

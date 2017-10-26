@@ -5,6 +5,8 @@
       <File FileName="Assets\Scripts\Background Script\BGScaler.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player Scripts\PlayerJump.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player Scripts\PlayerAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Obstacle Scripts\Obstacle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Obstacle Scripts\ObstacleSpawner.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
