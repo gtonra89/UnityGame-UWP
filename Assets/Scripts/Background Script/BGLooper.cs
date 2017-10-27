@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class BGLooper : MonoBehaviour {
-
+	public float savedtime = 0;
+    public float TimeDelay = 30f;
 	public float speed = 0.5f;
 
 	private Vector2 offset = Vector2.zero;
@@ -14,7 +15,14 @@ public class BGLooper : MonoBehaviour {
 	}
 
 	void Update () {
-		offset.x += speed * Time.deltaTime;
-		mat.SetTextureOffset ("_MainTex", offset);
+		if(((Time.time) - (savedtime)) > TimeDelay ) { 
+            savedtime = Time.time; //reset the saved time
+			speed += (0.080f);
+			offset.x += speed * Time.deltaTime;
+		}
+		else{
+			offset.x += speed * Time.deltaTime;
+			mat.SetTextureOffset ("_MainTex", offset);
+		}
 	}
 }

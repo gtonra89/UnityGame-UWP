@@ -15,9 +15,12 @@ public class ObstacleSpawner : MonoBehaviour {
 
 	void Start () {
 		StartCoroutine (SpawnRandomObstacle ());
+		
 	}
 
 	void InitializeObstacles() {
+	
+		
 		int index = 0;
 		for(int i = 0; i < obstacles.Length * 3; i++) {
 			GameObject obj = Instantiate(obstacles[index], new Vector3(transform.position.x,
@@ -40,7 +43,7 @@ public class ObstacleSpawner : MonoBehaviour {
 	}
 
 	IEnumerator SpawnRandomObstacle() {
-		yield return new WaitForSeconds (Random.Range(1.5f, 4.5f));
+		yield return new WaitForSeconds (Random.Range(1.0f, 2.5f));
 
 		int index = Random.Range (0, obstaclesForSpawing.Count);
 		while (true) {
@@ -54,6 +57,7 @@ public class ObstacleSpawner : MonoBehaviour {
 		}
 
 		StartCoroutine (SpawnRandomObstacle ());
+		
 
 	}
 
