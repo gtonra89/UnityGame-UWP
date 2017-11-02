@@ -3,18 +3,48 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class GameplayController : MonoBehaviour {
+	/*********************************************************************************/
+	const string privateCode = "Lue5PnQTNUqjhU4Z3LT6Ywn87duzf2Lk67IgJpjGH0Tw";
+	const string publicCode = "59f9c90a6b2b65dd70927a7a"; 
+	const string webURL = "http://dreamlo.com/lb/"; 
+	private string username = "him";
+	private int score;
+	
+/*********************************************************************************************/	
+	
+	public void AddNewHighscore(string username, int score) {
+		StartCoroutine(UploadNewHighscore(username,score));
+	}
 
+	IEnumerator UploadNewHighscore(string username, int score) {
+		WWW www = new WWW(webURL + privateCode + "/add/" + WWW.EscapeURL(username) + "/" + score);
+		yield return www;
+
+		if (string.IsNullOrEmpty(www.error))
+			print ("Upload Successful");
+		else {
+			print ("Error uploading: " + www.error);
+		}
+	}
+/**************************************************************************************/	
 	[SerializeField]
 	private GameObject pausePanel;
-
+	
 	[SerializeField]
 	private Button restartGameButton;
 
 	[SerializeField]
 	private Text scoreText, pauseText;
 
-	private int score;
-
+/***************************************************************************************************************/	
+	
+	
+	public InputField inputField;
+	
+	void awake(){
+		inputField = GameObject.Find("InputField").GetComponent<InputField>();
+	}
+	
 	void Start () {
 		scoreText.text = score + "M";
 		StartCoroutine (CountScore());
@@ -34,19 +64,7 @@ public class GameplayController : MonoBehaviour {
 	void OnDisable() {
 		PlayerDied.endGame -= PlayerDiedEndTheGame;
 	}
-
 	void PlayerDiedEndTheGame() {
-
-		if (!PlayerPrefs.HasKey ("Score")) {
-			PlayerPrefs.SetInt("Score", 0);
-		} else {
-			int highscore = PlayerPrefs.GetInt("Score");
-
-			if(highscore < score) {
-				PlayerPrefs.SetInt("Score", score);
-			}
-		}
-
 		pauseText.text = "Retry";
 		pausePanel.SetActive (true);
 		restartGameButton.onClick.RemoveAllListeners ();
@@ -54,7 +72,13 @@ public class GameplayController : MonoBehaviour {
 		Time.timeScale = 0f;
 
 	}
-
+	
+	public void setUsername(string name){
+		username = name;
+		AddNewHighscore(username,score);		// call add new high score method which works fine already
+	}
+	
+	
 	public void PauseButton() {
 		Time.timeScale = 0f;
 		pausePanel.SetActive (true);
@@ -77,7 +101,18 @@ public class GameplayController : MonoBehaviour {
 		Application.LoadLevel ("Gameplay");
 	}
 
-} //GameplayController
+}
+ 
+/*public struct Highscore {
+	public string username;
+	public int score;
+
+	public Highscore(string _username, int _score) {
+		username = _username;
+		score = _score;
+	}
+
+}*/
 
 
 
@@ -93,6 +128,9 @@ public class GameplayController : MonoBehaviour {
 
 
 
+  
+
+	
 
 
 
