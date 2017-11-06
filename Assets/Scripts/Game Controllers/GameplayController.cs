@@ -4,10 +4,10 @@ using System.Collections;
 
 public class GameplayController : MonoBehaviour {
 	/*********************************************************************************/
-	const string privateCode = "Lue5PnQTNUqjhU4Z3LT6Ywn87duzf2Lk67IgJpjGH0Tw";
-	const string publicCode = "59f9c90a6b2b65dd70927a7a"; 
-	const string webURL = "http://dreamlo.com/lb/"; 
-	private string username = "clown";
+	const string privateCode = "Lue5PnQTNUqjhU4Z3LT6Ywn87duzf2Lk67IgJpjGH0Tw"; // generated private code for leaderboard
+	const string publicCode = "59f9c90a6b2b65dd70927a7a"; //generated public code for leaderboard
+	const string webURL = "http://dreamlo.com/lb/"; //leaderboard url
+	private string username = "";
 	private int score;
 	
 /*********************************************************************************************/	
@@ -102,17 +102,7 @@ public class GameplayController : MonoBehaviour {
 	}
 
 }
- 
-/*public struct Highscore {
-	public string username;
-	public int score;
 
-	public Highscore(string _username, int _score) {
-		username = _username;
-		score = _score;
-	}
-
-}*/
 
 
 
