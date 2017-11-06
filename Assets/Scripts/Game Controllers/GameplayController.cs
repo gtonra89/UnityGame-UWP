@@ -7,7 +7,7 @@ public class GameplayController : MonoBehaviour {
 	const string privateCode = "Lue5PnQTNUqjhU4Z3LT6Ywn87duzf2Lk67IgJpjGH0Tw";
 	const string publicCode = "59f9c90a6b2b65dd70927a7a"; 
 	const string webURL = "http://dreamlo.com/lb/"; 
-	private string username = "him";
+	private string username = "clown";
 	private int score;
 	
 /*********************************************************************************************/	
