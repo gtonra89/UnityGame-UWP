@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Highscores : MonoBehaviour {
 
-	const string privateCode = "Lue5PnQTNUqjhU4Z3LT6Ywn87duzf2Lk67IgJpjGH0Tw";
-	const string publicCode = "59f9c90a6b2b65dd70927a7a"; 
-	const string webURL = "http://dreamlo.com/lb/";
+	const string privateCode = "Lue5PnQTNUqjhU4Z3LT6Ywn87duzf2Lk67IgJpjGH0Tw"; //private key for leaderboard
+	const string publicCode = "59f9c90a6b2b65dd70927a7a"; //public key for leaderboard
+	const string webURL = "http://dreamlo.com/lb/"; //weburl address
 
-	DisplayHighscores Display;
+	DisplayHighscores Display; 
 	public Highscore[] list;
 	static Highscores instance;
 	
@@ -18,11 +18,13 @@ public class Highscores : MonoBehaviour {
 
 
 	public void DownloadHighscores() {
+		
 		StartCoroutine("DownloadFromDatabase");
 	}
 
 	IEnumerator DownloadFromDatabase() {
-		WWW www = new WWW(webURL + publicCode + "/pipe/");
+		// Get your data as pipe delimited providing the address url and the pulic code
+		WWW www = new WWW(webURL + publicCode + "/pipe/"); 
 		yield return www;
 		
 		if (string.IsNullOrEmpty (www.error)) {
