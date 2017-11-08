@@ -7,43 +7,43 @@ public class Highscores : MonoBehaviour {
 	const string publicCode = "59f9c90a6b2b65dd70927a7a"; 
 	const string webURL = "http://dreamlo.com/lb/";
 
-	DisplayHighscores highscoreDisplay;
-	public Highscore[] highscoresList;
+	DisplayHighscores Display;
+	public Highscore[] list;
 	static Highscores instance;
 	
 	void Awake() {
-		highscoreDisplay = GetComponent<DisplayHighscores> ();
+		Display = GetComponent<DisplayHighscores> ();
 		instance = this;
 	}
 
 
 	public void DownloadHighscores() {
-		StartCoroutine("DownloadHighscoresFromDatabase");
+		StartCoroutine("DownloadFromDatabase");
 	}
 
-	IEnumerator DownloadHighscoresFromDatabase() {
+	IEnumerator DownloadFromDatabase() {
 		WWW www = new WWW(webURL + publicCode + "/pipe/");
 		yield return www;
 		
 		if (string.IsNullOrEmpty (www.error)) {
-			FormatHighscores (www.text);
-			highscoreDisplay.OnHighscoresDownloaded(highscoresList);
+			Format (www.text);
+			Display.OnHighscoresDownloaded(list);
 		}
 		else {
 			print ("Error Downloading: " + www.error);
 		}
 	}
 
-	void FormatHighscores(string textStream) {
+	void Format(string textStream) {
 		string[] entries = textStream.Split(new char[] {'\n'}, System.StringSplitOptions.RemoveEmptyEntries);
-		highscoresList = new Highscore[entries.Length];
+		list = new Highscore[entries.Length];
 
 		for (int i = 0; i <entries.Length; i ++) {
 			string[] entryInfo = entries[i].Split(new char[] {'|'});
 			string username = entryInfo[0];
 			int score = int.Parse(entryInfo[1]);
-			highscoresList[i] = new Highscore(username,score);
-			print (highscoresList[i].username + ": " + highscoresList[i].score);
+			list[i] = new Highscore(username,score);
+			print (list[i].username + ": " + list[i].score);
 		}
 	}
 

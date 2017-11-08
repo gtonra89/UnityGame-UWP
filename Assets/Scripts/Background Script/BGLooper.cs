@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BGLooper : MonoBehaviour {
 	public float savedtime = 0;
-    public float TimeDelay = 30f;
+    public float CountDown = 30f;
 	public float speed = 0.5f;
 
 	private Vector2 offset = Vector2.zero;
@@ -15,7 +15,7 @@ public class BGLooper : MonoBehaviour {
 	}
 
 	void Update () {
-		if(((Time.time) - (savedtime)) > TimeDelay ) { 
+		if(((Time.time) - (savedtime)) > CountDown ) { 
             savedtime = Time.time; //reset the saved time
 			speed += (0.080f);
 			offset.x += speed * Time.deltaTime;
