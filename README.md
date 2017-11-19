@@ -15,7 +15,7 @@ Universal Windows Platform (UWP) is a platform-homogeneous application architect
 
 on download of the git repositry or clone you will have to downloaded unity then extract and open the game on untiy or even windows visual studio<br>
 preferably if on a Windows platform you will be able to navigate to the windows store and search for "jumping jimbob"
-or just click the link here to get redirected <a href="https://www.microsoft.com/en-us/store/p/jumpingjimbob/9nzpn0nrnvfd?SilentAuth=1&wa=wsignin1.0&lc=1033">Jumping JIMBOB</a>
+or just click the link here to get redirected <a href="https://www.microsoft.com/en-us/store/p/jumpingjimbob/9nzpn0nrnvfd?SilentAuth=1&wa=wsignin1.0&lc=1033">Jumping JimBob</a>
 
 
 
