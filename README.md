@@ -1,6 +1,6 @@
 # UnityGame-UWP
 a unity powered endless Runner game Called Jumping JimBob designed for a 4th year Windows mobile applications module undertaken in the  
-<b>Galway-Mayo Institute of Technology</b> 
+<b>Galway-Mayo Institute of Technology</b><br><br>
 <img src="https://timetable.gmit.ie/img/header.jpg">
 
 ##Link for the leaderBoard online page and documentation
