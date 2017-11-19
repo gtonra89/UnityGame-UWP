@@ -3,7 +3,7 @@ a unity powered endless Runner game Called Jumping JimBob designed for a 4th yea
 <b>Galway-Mayo Institute of Technology</b><br><br>
 <img src="https://timetable.gmit.ie/img/header.jpg">
 
-##Link for the leaderBoard online page and documentation
+## Link for the LeaderBoard online (Click Image)
 
 <a href= "http://dreamlo.com/lb/Lue5PnQTNUqjhU4Z3LT6Ywn87duzf2Lk67IgJpjGH0Tw"><img src="https://mahara.dkit.ie/artefact/file/download.php?file=171513&view=34707" style="width:50px;height:50px;"></a>
 
