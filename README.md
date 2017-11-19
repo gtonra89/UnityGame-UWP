@@ -3,7 +3,7 @@ a unity powered endless Runner game Called Jumping JimBob designed for a 4th yea
 <b>Galway-Mayo Institute of Technology</b><br><br>
 <img src="https://timetable.gmit.ie/img/header.jpg">
 
-## about Dreamlo Leaderboard
+## About Dreamlo Leaderboard
 How does this thing work?<br>
 All communication with the server is done through simple HTTP GET requests. In fact you don't even use post or querystrings, you just build a URL. It's super easy!<br>
 Every leaderboard has a private URL for adding/deleting scores. This should be compiled in your code. For your website you can use a public URL wich has read access only.
