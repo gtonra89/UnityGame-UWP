@@ -5,7 +5,7 @@ a unity powered endless Runner game Called Jumping JimBob designed for a 4th yea
 
 ##Link for the leaderBoard online page and documentation
 
-<a href= "http://dreamlo.com/lb/Lue5PnQTNUqjhU4Z3LT6Ywn87duzf2Lk67IgJpjGH0Tw"><img src="https://mahara.dkit.ie/artefact/file/download.php?file=171513&view=34707" style="width:200px;height:200px;"></a>
+<a href= "http://dreamlo.com/lb/Lue5PnQTNUqjhU4Z3LT6Ywn87duzf2Lk67IgJpjGH0Tw"><img src="https://mahara.dkit.ie/artefact/file/download.php?file=171513&view=34707" style="width:50px;height:50px;"></a>
 
 ## About Unity
 Unity is a cross-platform game engine developed by Unity Technologies,[5] which is primarily used to develop video games and simulations for computers, consoles and mobile devices. First announced only for OS X, at Apple's Worldwide Developers Conference in 2005, it has since been extended to target 27 platforms.
