@@ -5,7 +5,7 @@ a unity powered endless Runner game Called Jumping JimBob designed for a 4th yea
 
 # Project Specifications
 ## Create a Windows 10 UWP App. The application should incorporate the following elements:
-<br><br>A responsive UI across the Windows 10 devices. There are some available for testing and
+<br>A responsive UI across the Windows 10 devices. There are some available for testing and
 this includes the IoT core, mobile devices, tablet and PC. This includes Visual State
 Management and using available SDKs for individual device types.
 <br><br>A UI that has been well designed and is fit for purpose. User Experience should be carefully
