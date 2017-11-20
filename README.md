@@ -3,6 +3,18 @@ a unity powered endless Runner game Called Jumping JimBob designed for a 4th yea
 <b>Galway-Mayo Institute of Technology</b><br><br>
 <img src="https://timetable.gmit.ie/img/header.jpg">
 
+# Project Specifications
+## Create a Windows 10 UWP App. The application should incorporate the following elements:<br>
+A responsive UI across the Windows 10 devices. There are some available for testing and
+this includes the IoT core, mobile devices, tablet and PC. This includes Visual State
+Management and using available SDKs for individual device types.
+<br>A UI that has been well designed and is fit for purpose. User Experience should be carefully
+considered while developing the application. The User Experience should be consistent
+across devices.
+<br>Mobile services for data storage and retrieval. The cloud service does not have to be written
+in C# to be able to interact with a UWP. The preferred cloud to use is Azure.
+<br>Use of the MVVM design pattern in the development approach
+
 ## About Dreamlo Leaderboard
 How does this thing work?<br>
 All communication with the server is done through simple HTTP GET requests. In fact you don't even use post or querystrings, you just build a URL. It's super easy!<br>
