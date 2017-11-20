@@ -19,8 +19,7 @@ in C# to be able to interact with a UWP. The preferred cloud to use is Azure.
 How does this thing work?<br>
 All communication with the server is done through simple HTTP GET requests. In fact you don't even use post or querystrings, you just build a URL. It's super easy!<br>
 Every leaderboard has a private URL for adding/deleting scores. This should be compiled in your code. For your website you can use a public URL wich has read access only.
-## Link for the LeaderBoard (Click Image)
-<a href= "http://dreamlo.com/lb/Lue5PnQTNUqjhU4Z3LT6Ywn87duzf2Lk67IgJpjGH0Tw"><img src="https://mahara.dkit.ie/artefact/file/download.php?file=171513&view=34707" style="width:50px;height:50px;"></a>
+
 
 ## About Unity
 Unity is a cross-platform game engine developed by Unity Technologies,[5] which is primarily used to develop video games and simulations for computers, consoles and mobile devices. First announced only for OS X, at Apple's Worldwide Developers Conference in 2005, it has since been extended to target 27 platforms.
