@@ -15,19 +15,23 @@ across devices.
 in C# to be able to interact with a UWP. The preferred cloud to use is Azure.
 <br><br>Use of the MVVM design pattern in the development approach
 
-## About Dreamlo Leaderboard
+## About Dreamlo Leaderboard 
+<img src="https://github.com/gtonra89/UnityGame-UWP/blob/master/dreamlo.png?raw=true">
 How does this thing work?<br>
 All communication with the server is done through simple HTTP GET requests. In fact you don't even use post or querystrings, you just build a URL. It's super easy!<br>
 Every leaderboard has a private URL for adding/deleting scores. This should be compiled in your code. For your website you can use a public URL wich has read access only.
 
 
-## About Unity
+## About Unity 
+<img src="https://github.com/gtonra89/UnityGame-UWP/blob/master/blog_thumb_unity.jpg?raw=true">
 Unity is a cross-platform game engine developed by Unity Technologies,[5] which is primarily used to develop video games and simulations for computers, consoles and mobile devices. First announced only for OS X, at Apple's Worldwide Developers Conference in 2005, it has since been extended to target 27 platforms.
 
-## About UWP
+## About UWP 
+<img src="https://github.com/gtonra89/UnityGame-UWP/blob/master/uwp.jpg?raw=true">
 Universal Windows Platform (UWP) is a platform-homogeneous application architecture created by Microsoft and first introduced in Windows 10. The purpose of this software platform is to help develop universal apps that run on Windows 10, Windows 10 Mobile, Xbox One and Hololens without the need to be re-written for each. It supports Windows app development using C++, C#, VB.NET, and XAML. The API is implemented in C++, and supported in C++, VB.NET, C#, F# and JavaScript. Designed as an extension to the Windows Runtime platform first introduced in Windows Server 2012 and Windows 8, UWP allows developers to create apps that will potentially run on multiple types of devices
 
 ## About Model View View-Model(MVVM)
+<img src="https://i-msdn.sec.s-msft.com/dynimg/IC416621.png" align="middle">
 Implementing the Model-View-ViewModel Pattern
 <br>
 The Model-View-ViewModel (MVVM) pattern is an application pattern that isolates the user interface from the underlying business logic. MVVM belongs to a class of patterns called Separated Presentation. These patterns provide a clean separation between the UI and the rest of the application. This improves the testability of the application and allows the application and its UI to evolve more easily and independently. The MVVM pattern consists of the following parts:
@@ -36,11 +40,9 @@ The View class which is the user interface. It displays information to the user 
 The ViewModel class, which is the bridge between the view and the model. Each View class has a corresponding ViewModel class. The ViewModel retrieves data from the Model and manipulates it into the format required by the View. It notifies the View if the underlying data in the model is changed, and it updates the data in the Model in response to UI events from the View.
 The following diagram illustrates the relationship between the View, the ViewModel, and the Model.
 The MVVM pattern.
-<br><br>
-<img src="https://i-msdn.sec.s-msft.com/dynimg/IC416621.png" align="middle">
-<br><br>
 
-## about Azure 
+## about Azure
+<img src="https://github.com/gtonra89/UnityGame-UWP/blob/master/Microsoft%20Azure.png?raw=true">
 Although i did not implement azure i still feel its a pretty nifty cloud platform service and worth a mention
 
 Microsoft Azure is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through a global network of Microsoft-managed data centers. It provides software as a service (SaaS), platform as a service and infrastructure as a service and supports many different programming languages, tools and frameworks, including both Microsoft-specific and third-party software and systems.
