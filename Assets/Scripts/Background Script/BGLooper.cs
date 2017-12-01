@@ -17,7 +17,7 @@ public class BGLooper : MonoBehaviour {
 	void Update () {
 		if(((Time.time) - (savedtime)) > CountDown ) { 
             savedtime = Time.time; //reset the saved time
-			speed += (0.080f);
+			speed += (0.010f);
 			offset.x += speed * Time.deltaTime;
 		}
 		else{
